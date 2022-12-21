@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 3</title>
+
+    <style>
+    body {
+        margin: 0;
+        width: 100%;
+        height: 100vh;
+        color: rgba(255,255,255,255);
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        overflow: hidden;
+        height: 100vh;
+    }
+
+    .all-content {
+        display: flex;
+        height: 100vh;
+    }
+
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 14;
+    }
+
+    .container {
+        display: flex;
+    }
+
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 6;
+        height: 85vh;
+    }
+
+    header {
+            background-color: rgba(17,16,35,255);
+            display: flex;
+            flex-direction: row;
+            height: 15vh;
+            width: 100%;
+            font-weight: 800;
+            font-size: 1.1em;
+            padding-top: 1em;
+            padding-right: 0.5em;
+            padding-bottom: 0.5em;
+            padding-left: 0.5em;
+    }
+
+
+    .nav {
+        background-color: rgba(194,33,119,255);
+        display: flex;
+        flex-grow: 1;       
+        height: 100%;
+        width: 10vw;
+        font-weight: 800;
+            font-size: 1.1em;
+            padding-top: 0.9em;
+            padding-right: 0.5em;
+            padding-bottom: 0.5em;
+            padding-left: 0.5em;
+    }
+
+    .article {
+            background-color: rgba(255,255,255,255);
+            color: rgba(1,1,1,255);
+            flex-grow: 1;
+            height:  70%;
+            font-weight: 800;
+            font-size: 1.1em;
+            padding-top: 0.9em;
+            padding-right: 0.5em;
+            padding-bottom: 0.5em;
+            padding-left: 0.5em;
+    }
+
+    footer { /* aside */
+            background-color: rgba(50,3,136,255);
+            flex-grow: 1;
+            flex-direction: row;
+            font-weight: 800;
+            font-size: 1.2em;
+            padding-top: 0.9em;
+            padding-right: 0.5em;
+            padding-bottom: 0.5em;
+            padding-left: 0.5em;
+            flex-grow: 1;
+    }
+
+    .aside { /* footer */
+        background-color: rgba(17,16,35,255);
+        height: 5%;
+        width: 100%;
+        flex-grow: 1;
+        font-weight: 800;
+        font-size: 1.2em;
+        padding-top: 0.9em;
+        padding-right: 0.5em;
+        padding-bottom: 0.5em;
+        padding-left: 0.5em;
+    }
+
+
+    </style>
+</head>
+<body>
+
+    <div class = "all-content">
+
+        <nav> 
+            <div class ="nav">
+                <span>Nav</span>
+            </div>
+        </nav>
+        
+        <div class = "main-content">
+            <header>
+                <span>Header</span>
+            </header>
+    
+            <div class = "container">
+                <div class = "flex-container">
+                    <div class = "article">
+                        <span>Article</span>
+                    </div>
+                    <div class = "aside">
+                        <span>Footer</span>
+                    </div>
+                </div>
+        
+                <footer>
+                    <span>Aside</span>
+                </footer>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
